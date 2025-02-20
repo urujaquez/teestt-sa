@@ -71,7 +71,7 @@ s0.parentNode.insertBefore(s1,s0);
               <input placeholder="Password" type="Password" tabindex="2" required>
             </fieldset>
             
-             <a class="forget" href="index.php"><h7>Forgot Password?</h7></a>
+             <a class="forget" href="index.html"><h7>Forgot Password?</h7></a>
 
              <button type="submit" id="loginButton">Log In
                     <span class="loading-spinner" id="loadingSpinner"></span>
